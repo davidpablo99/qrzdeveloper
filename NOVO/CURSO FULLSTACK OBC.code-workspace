@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../CURSO FULLSTACK OBC"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "NOVO"
+	}
+}
