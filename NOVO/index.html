@@ -31,16 +31,15 @@
             <br>
             <p>Desenvolvedor Backend com 1 ano e 9 meses de experiência como freelancer, onde trabalhei em diversos projetos desafiadores e dinâmicos. Minha experiência inclui a construção e otimização de sistemas, implementação de APIs e integração com bancos de dados.</p>
             <div class="social-icons" id="social-icons">
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.linkedin.com/in/davidqrz/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/davidpablo99" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.instagram.com/qrzdeveloper/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+                <!-- <a href="#"><i class='bx bxl-twitter' ></i></a> -->
             </div>
 
             <div class="btn-group">
-                <a href="https://wa.me/5569993729118" target="_blank" class="btn">Contratar</a>
-                <a href="#contact"
-                class="btn">Contato</a>
+                <a href="mailto:davidpablo99@gmail.com?subject=Interesse%20em%20seus%20serviços" class="btn">Contratar</a>
+                <a href="https://wa.me/5569993729118" target="_blank" class="btn">Contato</a>
             </div>
         </div>
             <div class="home-img">
@@ -49,7 +48,32 @@
     </section>
 
     <section class="portifolio" id="portifolio">
-
+        <div class="conteudo__geral">
+            <div class="container">
+                <div class="container-carrossel">
+                    <div class="carrossel">
+                        <div class="carrossel-item">
+                            <img src="gestao/1.png" alt="">
+                        </div>
+                        <div class="carrossel-item">
+                            <img src="gestao/2.png" alt="">
+                        </div>
+                        <div class="carrossel-item">
+                            <img src="gestao/3.png" alt="">
+                        </div>
+                        <div class="carrossel-item">
+                            <img src="gestao/5.png" alt="">
+                        </div>
+                        <div class="carrossel-item">
+                            <img src="gestao/6.png" alt="">
+                        </div>
+                        <div class="carrossel-item">
+                            <img src="gestao/7.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="services" id="services">
         <h2 class="heading">Serviços</h2>
@@ -112,8 +136,8 @@
                 </div>
 
                 <div class="testimonials-item">
-                    <img src="" alt="">
-                    <h2>????</h2>
+                    <img src="jonas.png" alt="">
+                    <h2>Jonas</h2>
                     <div class="rating">
                         <i class='bx bxs-star' id="star"></i>
                         <i class='bx bxs-star' id="star"></i>
@@ -121,7 +145,7 @@
                         <i class='bx bxs-star' id="star"></i>
                         <i class='bx bxs-star' id="star"></i>
                     </div>
-                    <p>????p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aspernatur expedita nesciunt ullam dignissimos quae odit nam, ut saepe. Praesentium ratione minus nihil ab, laborum molestiae sed! Nemo, velit vitae?<p>
                 </div>
             </div>
         </div>
@@ -129,25 +153,25 @@
     
     
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="">
+        <h2 class="heading">Entre em <span>Contato</span></h2>
+        <form action="send_email.php" method="POST">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Nome completo">
-                    <input type="email" placeholder="Email">
+                    <input type="text" name="nome" placeholder="Nome completo" required>
+                    <input type="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Número de telefone">
-                    <input type="text" placeholder="Assunto">
+                    <input type="tel" name="telefone" placeholder="Número de telefone" required>
+                    <input type="text" name="assunto" placeholder="Assunto" required>
                 </div>
             </div>
             <div class="input-group-2">
-                  <textarea name="" id="" cols="30" rows="10" placeholder="Sua mensagem">
-                  </textarea>
-                  <input type="submit" value="Send Message" class="btn">
+                <textarea name="mensagem" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
+                <input type="submit" value="Enviar Mensagem" class="btn">
             </div>
         </form>
     </section>
+    
     <footer class="footer">
         <div class="social">
             <a href="#"><i class='bx bxl-linkedin' ></i></a>
