@@ -155,3 +155,28 @@ const initEvents = () => {
 };
 
 initEvents();
+
+
+function sendMail() {
+  // Coleta os dados do formulário
+  var nome = document.getElementById('nome').value;
+  var email = document.getElementById('email').value;
+  var telefone = document.getElementById('telefone').value;
+  var assunto = document.getElementById('assunto').value;
+  var mensagem = document.getElementById('mensagem').value;
+
+  // Enviar o email
+  emailjs.send("service_9j8sg9b", "template_vx8278e", {
+      from_name: nome,
+      from_email: email,
+      phone: telefone,
+      subject: assunto,
+      message: mensagem
+  }).then(function(response) {
+      alert("Mensagem enviada com sucesso!");
+      console.log('Success:', response);
+  }, function(error) {
+      alert("Erro ao enviar a mensagem.");
+      console.log('Error:', error);
+  });
+}
